@@ -1,0 +1,43 @@
+* {
+  // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 900
+
+  .montserrat-<uniquifier > {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+}
+
+/* HEADER */
+
+#logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  display: inline;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  color: black;
+}
+
+/* MAIN */
+
+.main-img {
+  width: 50%;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid black;
+}
