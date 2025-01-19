@@ -51,12 +51,46 @@
         </a>
       </ul>
       <h3 class="not-urgent">Not so urgent?</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        possimus molestiae fugit quos, facere eveniet a sequi quae error
-        consectetur? Nihil labore, amet quisquam quidem architecto molestias
-        laboriosam odio deleniti.
-      </p>
+
+      /* Example from https://www.w3schools.com/howto/howto_css_contact_form.asp
+      */
+      <div class="container">
+        <form action="action_page.php">
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            id="first-name"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="last-name">Last Name</label>
+          <input
+            type="text"
+            id="last-name"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="sweden">Sweden</option>
+            <option value="norway">Norway</option>
+            <option value="denmark">Denmark</option>
+            <option value="finland">Finland</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </main>
     <footer>
       <p class="copy-right">&#169;Copy right Sophias Portfolio 2025</p>
