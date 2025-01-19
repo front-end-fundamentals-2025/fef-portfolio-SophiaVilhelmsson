@@ -51,25 +51,22 @@ a {
 
 /* MAIN */
 
-.main-img {
-  width: 1150px;
-  height: 400px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 100px;
-}
-
-.welcome-text {
+.get-in-touch {
   color: green;
-  font-size: 40px;
-  text-align: center;
+  font-size: 30px;
   text-decoration: underline;
 }
 
-.description-text {
+.contacts {
   color: green;
-  font-size: 15px;
-  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.not-urgent {
+  color: green;
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 /* FOOTER */
