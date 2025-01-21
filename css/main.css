@@ -1,7 +1,4 @@
 * {
-  // <uniquifier>: Use a unique and descriptive class name
-  // <weight>: Use a value from 100 to 900
-
   .montserrat-<uniquifier > {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
@@ -11,6 +8,19 @@
 }
 
 /* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-left: 4rem;
+}
 
 #logo {
   font-weight: 600;
@@ -51,14 +61,6 @@ a {
 
 /* MAIN */
 
-.main-img {
-  width: 1150px;
-  height: 100px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 100px;
-}
-
 .welcome-text {
   color: green;
   font-size: 40px;
@@ -72,6 +74,13 @@ a {
   text-align: center;
   padding-left: 150px;
   padding-right: 150px;
+}
+
+/* POSTER SECTION */
+
+.poster-container {
+  display: grid;
+  grid-template-areas: repeat(3, 1fr);
 }
 
 /* FOOTER */
