@@ -1,97 +1,149 @@
 * {
-  .montserrat-<uniquifier > {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
+  font-family: "Lato", serif;
+  text-decoration: none;
+  list-style: none;
 }
-
 /* HEADER */
 
-header {
+/* Logo and text in navigation bar */
+
+.header {
+  background-color: rgb(1, 98, 11);
+  margin-top: 0;
+  margin-left: 0;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-ul {
-  display: flex;
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
-li {
-  margin-left: 4rem;
+.logo:hover {
+  color: rgb(239, 160, 0);
+  text-shadow: 0 0 6px black;
+  transform: scale(1.1);
 }
 
-#logo {
-  font-weight: 600;
-  font-size: 1.2rem;
-  border: 2px solid black;
-  display: inline;
-  padding: 5px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0px;
-}
-
-.home {
-  color: black;
-  font-size: 18px;
-}
-
-.portfolio {
-  color: black;
-  font-size: 18px;
-}
-
-.about-me {
-  color: black;
-  font-size: 18px;
+.nav-items a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  margin: 2rem;
+  border-bottom: 0.1rem solid transparent;
+  transition: 0.3s ease;
 }
 
 .contact {
-  color: black;
-  font-size: 18px;
+  background-color: white;
+  color: rgb(1, 98, 11);
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  margin: 3rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.4rem;
+  transition: 0.3 ease;
 }
 
-a {
-  color: black;
+.nav-items a:hover {
+  color: rgb(239, 160, 0);
+  border-bottom: 0.1rem solid;
+}
+
+.contact:hover {
+  background-color: rgb(239, 160, 0);
+  color: white;
+  box-shadow: 0 0 6px black;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 /* MAIN */
 
-.welcome-text {
-  color: green;
-  font-size: 40px;
-  text-align: center;
-  text-decoration: underline;
+.jag-img {
+  width: 30%;
+  border-radius: 50%;
+  margin-right: 3rem;
 }
 
-.description-text {
-  color: green;
-  font-size: 15px;
-  text-align: center;
-  padding-left: 150px;
-  padding-right: 150px;
+main {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-/* POSTER SECTION */
+.home {
+  min-height: 50vh;
+  width: 100%;
+  gap: 3rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  margin-top: 3rem;
+}
 
-.poster-container {
-  display: grid;
-  grid-template-areas: repeat(3, 1fr);
+.home-content {
+  max-width: 800px;
+}
+
+.home-content h1 {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.home-content h2 {
+  color: black;
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+
+.home-content p {
+  color: black;
+  font-size: 1rem;
+}
+
+.hire-button {
+  width: 1rem;
+  gap: 4rem;
+}
+
+@media screen and (min-width: 500px) {
+  .picture-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* FOOTER */
 
 footer {
   margin-top: 1rem;
-  border-top: 1px solid black;
+  border-top: 0.3rem solid black;
 }
 
 .copy-right {
   color: black;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: bold;
 }
