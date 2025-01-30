@@ -71,46 +71,81 @@
   box-shadow: 0 0 6px black;
 }
 
-@media screen and (min-width: 700px) {
-  nav-items {
-    flex-direction: column;
-  }
+/* Introduction */
+
+.year {
+  width: 10%;
+  height: 20%;
+  border-radius: 50%;
+  margin-right: 3rem;
+  margin-top: 3rem;
 }
 
-/* PORTFOLIO SECTION */
-
-.picture-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-figure {
-  margin-left: 0;
-}
-
-.portfolio-images {
+main {
+  background-color: rgb(255, 255, 255);
   width: 100%;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 3rem;
 }
 
-@media screen and (max-width: 800px) {
-  .picture-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+.home {
+  width: 100%;
+  gap: 3rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 0;
 }
 
-@media screen and (max-width: 375px) {
-  .picture-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
+.home-content {
+  max-width: 800px;
 }
 
-/* FOOTER */
+.home-content h1 {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.home-content h2 {
+  color: black;
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+
+.home-content p {
+  color: black;
+  font-size: 1rem;
+}
+
+.buy-button {
+  background-color: rgb(1, 98, 11);
+  color: white;
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.4rem;
+  transition: 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: rgb(239, 160, 0);
+  color: black;
+  cursor: pointer;
+}
+
+.buy-button:active {
+  background-color: rgba(239, 159, 0, 0.611);
+}
+
+/* Footer */
 
 footer {
   margin-top: 1rem;
-  border-top: 0.3rem solid black;
 }
 
 .copy-right {
