@@ -101,14 +101,16 @@
 
 /* PORTFOLIO SECTION */
 
-.picture-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+img {
+  width: 100%;
+  gap: 0;
+  margin: 1rem;
 }
 
-figure {
-  margin-left: 0;
-  width: 80%;
+.picture-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media screen and (max-width: 800px) {
