@@ -3,6 +3,31 @@
   text-decoration: none;
   list-style: none;
 }
+
+/* Animation for contact button */
+
+@keyframes shake {
+  25% {
+    transform: scale(1.2);
+    background-color: rgb(239, 160, 0);
+    box-shadow: 0 0 10px black;
+  }
+
+  40% {
+    transform: rotate(-10deg) scale(1.2);
+  }
+
+  60% {
+    transform: rotate(10deg) scale(1.2);
+  }
+}
+
+@keyframes sophia {
+  100% {
+    color: rgb(239, 160, 0);
+  }
+}
+
 /* HEADER */
 
 /* Parts of the code is inspired by https://www.youtube.com/watch?v=Dtb3DdSvYRY */
@@ -64,6 +89,9 @@
   border: 0.15rem solid black;
   border-radius: 0.4rem;
   transition: 0.3 ease;
+  animation-name: shake;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
 .nav-items a:hover {
@@ -148,6 +176,10 @@ main {
 .home-content p {
   color: black;
   font-size: 1rem;
+}
+
+.sophia {
+  animation-name: sophia;
 }
 
 .hire-button {

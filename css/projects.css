@@ -3,6 +3,15 @@
   text-decoration: none;
   list-style: none;
 }
+
+/* Animation for projects */
+
+@keyframes scale {
+  25% {
+    transform: scale(1.05);
+  }
+}
+
 /* HEADER */
 
 /* Logo and text in navigation bar */
@@ -111,6 +120,36 @@ img {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.nineteen:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+}
+
+.gamer:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+}
+
+.names:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+}
+
+.ronja:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+}
+
+.sweden:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+}
+
+.years:hover {
+  animation-name: scale;
+  animation-duration: 1s;
 }
 
 @media screen and (max-width: 800px) {
