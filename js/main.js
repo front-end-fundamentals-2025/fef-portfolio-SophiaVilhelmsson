@@ -18,3 +18,7 @@ const backgroundElement = document.getElementsByClassName("about-me-part")[0];
 backgroundElement.addEventListener("mouseover", function (event) {
   backgroundElement.style.backgroundColor = "rgb(200, 110, 0)";
 });
+
+backgroundElement.addEventListener("mouseleave", function (event) {
+  backgroundElement.style.backgroundColor = "rgb(1, 98, 11)";
+});
